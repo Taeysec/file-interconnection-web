@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     username: root
-    password: gcrj_2019_P
-    url: jdbc:mysql://localhost:3306/pdf?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
+    password: root
+    url: jdbc:mysql://localhost:3306/file_interconnection?useSSL=false&characterEncoding=utf8&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
   servlet:
     multipart:
