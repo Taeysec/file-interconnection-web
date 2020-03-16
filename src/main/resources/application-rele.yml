@@ -17,3 +17,7 @@ mybatis:
   type-aliases-package: com.dx340.fileinterconnectionweb.bean
 
 manage:
+
+netty:
+  port: 9090
+  url: 0.0.0.0

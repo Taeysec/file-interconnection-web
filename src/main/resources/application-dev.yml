@@ -18,3 +18,6 @@ mybatis:
 
 manage:
 
+netty:
+  port: 9090
+  url: 0.0.0.0

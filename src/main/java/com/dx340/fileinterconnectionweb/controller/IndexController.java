@@ -24,16 +24,8 @@ public class IndexController {
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public ApiResult login(@RequestBody LoginInfo loginInfo) {
-        // todo :check password
-//        System.out.println(loginInfo);
         boolean res = indexService.checkPassword(loginInfo);
         return res?ApiResultUtil.getOkResult():ApiResultUtil.getForbiddenResult("error");
-    }
-    @RequestMapping(value = "/test")
-    public ApiResult test(@RequestBody LoginInfo loginInfo) {
-        // todo :check password
-        System.out.println(loginInfo);
-        return ApiResultUtil.getOkResult();
     }
 
     @RequestMapping(value = "/user",method = RequestMethod.POST)
